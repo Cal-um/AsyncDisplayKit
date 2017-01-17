@@ -121,15 +121,6 @@ static NSString * const kCellReuseIdentifier = @"_ASCollectionViewCell";
   self.layoutAttributes = layoutAttributes;
 }
 
-/**
- * Keep our node filling our content view.
- */
-- (void)layoutSubviews
-{
-  [super layoutSubviews];
-  self.node.frame = self.contentView.bounds;
-}
-
 @end
 
 #pragma mark -
